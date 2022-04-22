@@ -1,0 +1,52 @@
+
+body{
+        background-color: #E3E3E3;
+
+}
+#body{
+    display: flex;
+    flex-direction: row;
+}
+canvas{
+    background-color: #fff;
+    padding: 20px;
+}
+#canvas{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 99%;
+}
+#herramientas{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.color, .tamaño, .otro{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+    @media print {
+  #color, #tamanho, #boton {
+    visibility: hidden;
+  }
+  #imprimir* {
+    visibility: visible;
+  }
+  #imprimir {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
