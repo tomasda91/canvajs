@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<title>Paint js Tomas Damario</title>
+
+<head>
+    <link href="paint.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="herramientas">
+            <div class="color">
+                <h4>Elije un color</h4>
+                    <input type="color" value="" id="color">
+            </div>
+            <div class="tamaño">
+                <h4>Tamaño</h4>
+                    <select name="Tamaño" id="tamanho">
+                    </select>
+            </div>
+            <div class="otro">           
+                <h4>Opciones</h4>
+                <div>
+                    <button id="boton" onclick="window.print()">imprimir Dibujo</button>
+                    <input type="button" onclick="limpiarPantalla()" id="limpiar" value="Borrar Todo">    
+                </div>
+            </div>
+    </div>
+
+    <div id="canvas">
+            <canvas id="imprimir" width="1050" height="800"></canvas>
+    </div>
+
+    <script type="text/javascript" src="paint.js"></script>
+
+</body>
